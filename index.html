@@ -4,9 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
   </head>
-  <body>
-    Hello
+    <div class="card" style="width: 50rem">
+
+      <div class="row">
+        <div class="col-6">
+
+          <div class="row">
+             <div class="col-4">
+            <div class="other-city">
+              London
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="other-city">
+              New York
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="other-city">
+              Tokyo
+            </div>
+          </div>
+
+          </div>
+
+           <div class="row">
+              <div class ="enter-city">
+                <form>
+                  <input type="text" id="input-city" class="form-control" placeholder="Enter city">
+                  <button class="search-button" id="special-button">Search</button>
+                  <button class="search-button" id="locbutton">
+                    Current location
+                </button>
+                </form>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-6">
+          <div class ="main-city">
+                <div id="current-city"> </div>
+                <p id="timenow" class="time"> </p>
+                <span id="weather-now" class="temperat"> </span>
+                <br />
+                <small id="description"> </small>
+                <br />
+                  <div class="windhumid">
+                  <span id="wind"> </span> <span id ="humid"> </span>
+                  </div>
+          </div>
+        </div>
+      </div>
+      
+         <div class="row"> 
+          <div class="col">
+            <div class="next-days">
+            Tomorrow
+            <br />
+                🌧
+                <br />
+                22°C
+                <br />
+                <small>rainy</small>
+            </div>
+          </div>
+           <div class="col">
+            <div class="next-days">
+            Thursday
+            <br />
+                ⛅
+                <br />
+                23°C
+                <br />
+                <small>partly sunny</small>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="next-days">
+            Friday
+            <br />
+                🌩
+                <br />
+                28°C
+                <br />
+                <small>storms</small>
+                <br />              
+            </div>
+          </div> 
+          <div class="col">
+            <div class="next-days">
+            Saturday
+            <br />
+                ☁
+                <br />
+                19°C
+                <br />
+                <small>cloudy</small>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="next-days">
+            Sunday
+            <br />
+                ☀
+                <br />
+                21°C
+                <br />
+                <small>sunny</small>
+            </div>
+          </div>
+         </div>
+
+    </div>
+    <div class="foot">
+      by Anna Kwiatkowska
+    </div>
+    <script src="src/index.js">
+    </script>
   </body>
 </html>
