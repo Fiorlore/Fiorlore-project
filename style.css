@@ -171,3 +171,9 @@ small {
   opacity: 0.65;
   margin: 30px;
 }
+
+a {
+  text-decoration: none;
+  color: #062a2d;
+  font-weight: bold;
+}
